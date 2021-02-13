@@ -16,7 +16,9 @@
   "scripts": {
     "res:build": "bsb -make-world",
     "res:clean": "bsb -clean-world",
-    "addon:build": "webpack build && prettier -w 'addon/**/*.{json,html}'"
+    "addon:build": "webpack build && prettier -w 'addon/**/*.{json,html}'",
+    "run:chromium": "web-ext -s addon run -t chromium",
+    "run:firefox": "web-ext -s addon run -t firefox-desktop"
   },
   "dependencies": {
     "@rescript/react": "^0.10.1"
