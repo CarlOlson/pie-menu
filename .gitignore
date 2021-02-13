@@ -1,0 +1,10 @@
+.merlin
+addon/background.js
+addon/content_script.js
+addon/options.js
+addon/options.html
+addon/polyfill.js
+lib/
+node_modules/
+web-ext-artifacts/
+**/*.bs.js

@@ -1,0 +1,24 @@
+{
+  "name": "pie-menu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "CarlOlson <CarlOlson@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "^9.0.0",
+    "html-webpack-plugin": "^5.1.0",
+    "prettier": "^2.2.1",
+    "web-ext": "^5.5.0",
+    "webextension-polyfill": "^0.7.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "scripts": {
+    "res:build": "bsb -make-world",
+    "res:clean": "bsb -clean-world",
+    "addon:build": "webpack build && prettier -w 'addon/**/*.{json,html}'"
+  },
+  "dependencies": {
+    "@rescript/react": "^0.10.1"
+  }
+}

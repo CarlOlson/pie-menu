@@ -1,0 +1,24 @@
+{
+  "name": "pie-menu",
+  "bsc-flags": ["-bs-super-errors"],
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "namespace": true,
+  "bs-dependencies": [
+    "@rescript/react"
+  ],
+  "ppx-flags": [],
+  "refmt": 3,
+  "reason": { "react-jsx": 3 }
+}
