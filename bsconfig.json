@@ -34,5 +34,6 @@
     ["tailwind-ppx", "-path", "./src/tailwind.css"]
   ],
   "refmt": 3,
-  "reason": { "react-jsx": 3 }
+  "reason": { "react-jsx": 3 },
+  "external-stdlib": "@rescript/std"
 }
