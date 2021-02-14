@@ -1,6 +1,6 @@
 {
   "name": "pie-menu",
-  "bsc-flags": ["-bs-super-errors"],
+  "bsc-flags": ["-bs-super-errors", "-open Belt"],
   "sources": [
     {
       "dir": "src",
@@ -28,7 +28,8 @@
   "suffix": ".bs.js",
   "namespace": true,
   "bs-dependencies": [
-    "@rescript/react"
+    "@rescript/react",
+    "bs-webapi"
   ],
   "ppx-flags": [
     ["tailwind-ppx", "-path", "./src/tailwind.css"]
