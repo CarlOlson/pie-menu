@@ -4,7 +4,10 @@ addon/content_script.js
 addon/options.js
 addon/options.html
 addon/polyfill.js
+addon/styles.css
+addon/*.LICENSE.txt
 lib/
 node_modules/
 web-ext-artifacts/
 **/*.bs.js
+tailwind.css
