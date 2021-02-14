@@ -11,3 +11,4 @@ node_modules/
 web-ext-artifacts/
 **/*.bs.js
 tailwind.css
+.tailwind_ppx_cache

@@ -3,9 +3,9 @@ module.exports = {
     enable: true,
     content: [
       "./src/**/*.re",
-      "./src/**/*.res",
-      "./src/**/*.bs.js"
-    ]
+      "./src/**/*.res"
+    ],
+    defaultExtractor: require("@dylanirlbeck/tailwind-ppx").extractor
   },
   darkMode: false,
   theme: {

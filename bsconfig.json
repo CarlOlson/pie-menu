@@ -4,7 +4,19 @@
   "sources": [
     {
       "dir": "src",
-      "subdirs": true
+      "subdirs": true,
+      "generators": [
+        {
+          "name": "gen-tailwind",
+          "edge": ["tailwind.css", ":", "styles.css"]
+        }
+      ]
+    }
+  ],
+  "generators": [
+    {
+      "name": "gen-tailwind",
+      "command": "tailwindcss build $in -o $out -c ../../tailwind.config.js"
     }
   ],
   "package-specs": [
@@ -18,7 +30,9 @@
   "bs-dependencies": [
     "@rescript/react"
   ],
-  "ppx-flags": [],
+  "ppx-flags": [
+    ["tailwind-ppx", "-path", "./src/tailwind.css"]
+  ],
   "refmt": 3,
   "reason": { "react-jsx": 3 }
 }

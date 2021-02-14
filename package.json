@@ -5,6 +5,7 @@
   "author": "CarlOlson <CarlOlson@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
+    "@dylanirlbeck/tailwind-ppx": "^0.8.4",
     "autoprefixer": "^10.2.4",
     "bs-platform": "^9.0.0",
     "css-loader": "^5.0.2",

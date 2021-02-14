@@ -84,6 +84,11 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.2.tgz#8f03a22a04de437254e8ce8cc84ba39689288752"
   integrity sha512-HyYEUDeIj5rRQU2Hk5HTB2uHsbRQpF70nvMhVzi+VJR0X+xNEhjPui4/kBf3VeH/wqD28PT4sVOm8qqLjBrSZg==
 
+"@dylanirlbeck/tailwind-ppx@^0.8.4":
+  version "0.8.4"
+  resolved "https://registry.yarnpkg.com/@dylanirlbeck/tailwind-ppx/-/tailwind-ppx-0.8.4.tgz#1043a1cd4a2aa6434f57190c0b64c5f083d3e02f"
+  integrity sha512-9vTmygqVjG8Iv58P+B/qC3tbbQGoQuOEGeZgnnWB0gM/5g5QdS7VDTyyfrGBe4kPv40lkuyyEynrj60Oc+He/A==
+
 "@eslint/eslintrc@^0.2.1":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.2.2.tgz#d01fc791e2fc33e88a29d6f3dc7e93d0cd784b76"
