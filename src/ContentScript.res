@@ -1,12 +1,13 @@
-// Wait for document to be created, should use a MutationObserver instead
-let _ = Js.Global.setTimeout(() => {
-  let document = Webapi.Dom.document
-  let root = Webapi.Dom.Document.createElement("div", document)
+open Webapi.Dom
 
+let root = Document.createElement("div", document)
+
+let _ = MutationObserver.make((_records, t) => {
   document
-  ->Webapi.Dom.Document.asHtmlDocument
-  ->Option.flatMap(Webapi.Dom.HtmlDocument.body)
-  ->Option.forEach(Webapi.Dom.Element.appendChild(root))
+  ->Document.asHtmlDocument
+  ->Option.flatMap(HtmlDocument.body)
+  ->Option.map(Element.appendChild(root))
+  ->Option.forEach(_ => MutationObserver.disconnect(t))
+}) |> MutationObserver.observe(Document.asNode(document), {"childList": true})
 
-  ReactDOM.render(<div> {React.string("Hello, world!")} </div>, root)
-}, 1000)
+ReactDOM.render(<div> {React.string("Hello, world!")} </div>, root)
